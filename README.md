@@ -14,7 +14,15 @@ The first architecture consists of Conv layers with a block configuration of [2,
 The second architecture is similar to the first but with the 512 channel block removed, and instead has a [3,3,3] block configuration for 64, 128, 256 channels respectively. It also includes dropout for Convolutional layers and an extra hidden linear layer of 128 neurons.
 
 ## Respository Details
+main.py file , which has to used to execute the model
+resnetModel.py file, which defines the base architecture of the modified ResNet model
 
+
+
+## How to run the Model
+In Google Colab, upload the files and then using:
+!python3 main.py
+you can get the results
 
 Code References:
 https://github.com/kuangliu/pytorch-cifar
