@@ -3,7 +3,7 @@
 This collection includes trials and application of a streamlined ResNet18 model architecture, which has been trained, validated, and assessed using the CIFAR-10 image classification dataset.
 
 
-#Abstract
+##Abstract
 This report details our efforts to achieve maximum test accuracy for the ResNet18 model, while adhering to a constraint that limits the number of trainable parameters in the new architecture to 5 million. We conducted experiments on the ResNet18 model by making changes to its layer structure and varying the parameters and optimizers. Based on the results of our experiments, we recommend modified ResNet18 architectures that achieve the highest test accuracy while still meeting the parameter constraint. Our experiments were carried out using the CIFAR-10 image classification dataset.
 
 #Best Models
