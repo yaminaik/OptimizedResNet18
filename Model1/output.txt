@@ -1,0 +1,471 @@
+Downloading https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz to .data/cifar-10-python.tar.gz
+100% 170498071/170498071 [00:12<00:00, 13160139.94it/s]
+Extracting .data/cifar-10-python.tar.gz to .data
+Files already downloaded and verified
+Files already downloaded and verified
+==> Building model with layer structure : [2, 1, 1, 1]
+The dropout value on linear layer:  0
+----------------------------------------------------------------
+        Layer (type)               Output Shape         Param #
+================================================================
+            Conv2d-1           [-1, 64, 32, 32]           1,728
+       BatchNorm2d-2           [-1, 64, 32, 32]             128
+            Conv2d-3           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-4           [-1, 64, 32, 32]             128
+            Conv2d-5           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-6           [-1, 64, 32, 32]             128
+        BasicBlock-7           [-1, 64, 32, 32]               0
+            Conv2d-8           [-1, 64, 32, 32]          36,864
+       BatchNorm2d-9           [-1, 64, 32, 32]             128
+           Conv2d-10           [-1, 64, 32, 32]          36,864
+      BatchNorm2d-11           [-1, 64, 32, 32]             128
+       BasicBlock-12           [-1, 64, 32, 32]               0
+           Conv2d-13          [-1, 128, 16, 16]          73,728
+      BatchNorm2d-14          [-1, 128, 16, 16]             256
+           Conv2d-15          [-1, 128, 16, 16]         147,456
+      BatchNorm2d-16          [-1, 128, 16, 16]             256
+           Conv2d-17          [-1, 128, 16, 16]           8,192
+      BatchNorm2d-18          [-1, 128, 16, 16]             256
+       BasicBlock-19          [-1, 128, 16, 16]               0
+           Conv2d-20            [-1, 256, 8, 8]         294,912
+      BatchNorm2d-21            [-1, 256, 8, 8]             512
+           Conv2d-22            [-1, 256, 8, 8]         589,824
+      BatchNorm2d-23            [-1, 256, 8, 8]             512
+           Conv2d-24            [-1, 256, 8, 8]          32,768
+      BatchNorm2d-25            [-1, 256, 8, 8]             512
+       BasicBlock-26            [-1, 256, 8, 8]               0
+           Conv2d-27            [-1, 512, 4, 4]       1,179,648
+      BatchNorm2d-28            [-1, 512, 4, 4]           1,024
+           Conv2d-29            [-1, 512, 4, 4]       2,359,296
+      BatchNorm2d-30            [-1, 512, 4, 4]           1,024
+           Conv2d-31            [-1, 512, 4, 4]         131,072
+      BatchNorm2d-32            [-1, 512, 4, 4]           1,024
+       BasicBlock-33            [-1, 512, 4, 4]               0
+           Linear-34                   [-1, 10]           5,130
+================================================================
+Total params: 4,977,226
+Trainable params: 4,977,226
+Non-trainable params: 0
+----------------------------------------------------------------
+Input size (MB): 0.01
+Forward/backward pass size (MB): 9.06
+Params size (MB): 18.99
+Estimated Total Size (MB): 28.06
+----------------------------------------------------------------
+==> Learning Rate  0.1
+==> Optimizer  SGD (
+Parameter Group 0
+    dampening: 0
+    differentiable: False
+    foreach: None
+    initial_lr: 0.1
+    lr: 0.1
+    maximize: False
+    momentum: 0.9
+    nesterov: False
+    weight_decay: 0.0005
+)
+==> Scheduler  <torch.optim.lr_scheduler.CosineAnnealingLR object at 0x7f526461a0a0>
+0
+done
+Epoch: 01 | Epoch Time: 0m 51s
+	Train Loss: 1.588 | Train Acc: 41.52%
+	 Val. Loss: 1.513 |  Val. Acc: 47.58%
+1
+done
+Epoch: 02 | Epoch Time: 0m 49s
+	Train Loss: 1.106 | Train Acc: 60.25%
+	 Val. Loss: 1.007 |  Val. Acc: 63.74%
+2
+done
+Epoch: 03 | Epoch Time: 0m 50s
+	Train Loss: 0.881 | Train Acc: 68.69%
+	 Val. Loss: 0.954 |  Val. Acc: 64.90%
+3
+done
+Epoch: 04 | Epoch Time: 0m 50s
+	Train Loss: 0.731 | Train Acc: 74.39%
+	 Val. Loss: 0.665 |  Val. Acc: 76.48%
+4
+done
+Epoch: 05 | Epoch Time: 0m 50s
+	Train Loss: 0.653 | Train Acc: 76.98%
+	 Val. Loss: 0.920 |  Val. Acc: 69.08%
+5
+done
+Epoch: 06 | Epoch Time: 0m 50s
+	Train Loss: 0.590 | Train Acc: 79.37%
+	 Val. Loss: 0.590 |  Val. Acc: 79.04%
+6
+done
+Epoch: 07 | Epoch Time: 0m 50s
+	Train Loss: 0.547 | Train Acc: 81.00%
+	 Val. Loss: 0.627 |  Val. Acc: 78.78%
+7
+done
+Epoch: 08 | Epoch Time: 0m 50s
+	Train Loss: 0.519 | Train Acc: 81.96%
+	 Val. Loss: 0.670 |  Val. Acc: 76.78%
+8
+done
+Epoch: 09 | Epoch Time: 0m 49s
+	Train Loss: 0.495 | Train Acc: 82.83%
+	 Val. Loss: 0.660 |  Val. Acc: 77.08%
+9
+done
+Epoch: 10 | Epoch Time: 0m 50s
+	Train Loss: 0.473 | Train Acc: 83.69%
+	 Val. Loss: 0.539 |  Val. Acc: 81.40%
+10
+done
+Epoch: 11 | Epoch Time: 0m 50s
+	Train Loss: 0.465 | Train Acc: 83.91%
+	 Val. Loss: 0.487 |  Val. Acc: 83.36%
+11
+done
+Epoch: 12 | Epoch Time: 0m 50s
+	Train Loss: 0.450 | Train Acc: 84.40%
+	 Val. Loss: 0.501 |  Val. Acc: 83.10%
+12
+done
+Epoch: 13 | Epoch Time: 0m 50s
+	Train Loss: 0.435 | Train Acc: 84.96%
+	 Val. Loss: 0.542 |  Val. Acc: 81.56%
+13
+done
+Epoch: 14 | Epoch Time: 0m 49s
+	Train Loss: 0.430 | Train Acc: 85.16%
+	 Val. Loss: 0.554 |  Val. Acc: 81.46%
+14
+done
+Epoch: 15 | Epoch Time: 0m 49s
+	Train Loss: 0.416 | Train Acc: 85.59%
+	 Val. Loss: 0.450 |  Val. Acc: 83.86%
+15
+done
+Epoch: 16 | Epoch Time: 0m 50s
+	Train Loss: 0.409 | Train Acc: 85.92%
+	 Val. Loss: 0.565 |  Val. Acc: 80.52%
+16
+done
+Epoch: 17 | Epoch Time: 0m 49s
+	Train Loss: 0.409 | Train Acc: 85.76%
+	 Val. Loss: 0.477 |  Val. Acc: 83.86%
+17
+done
+Epoch: 18 | Epoch Time: 0m 50s
+	Train Loss: 0.393 | Train Acc: 86.40%
+	 Val. Loss: 0.408 |  Val. Acc: 86.10%
+18
+done
+Epoch: 19 | Epoch Time: 0m 49s
+	Train Loss: 0.396 | Train Acc: 86.56%
+	 Val. Loss: 0.497 |  Val. Acc: 83.16%
+19
+done
+Epoch: 20 | Epoch Time: 0m 49s
+	Train Loss: 0.383 | Train Acc: 86.89%
+	 Val. Loss: 0.502 |  Val. Acc: 82.84%
+20
+done
+Epoch: 21 | Epoch Time: 0m 48s
+	Train Loss: 0.382 | Train Acc: 86.71%
+	 Val. Loss: 0.548 |  Val. Acc: 82.10%
+21
+done
+Epoch: 22 | Epoch Time: 0m 48s
+	Train Loss: 0.379 | Train Acc: 86.80%
+	 Val. Loss: 0.512 |  Val. Acc: 83.36%
+22
+done
+Epoch: 23 | Epoch Time: 0m 48s
+	Train Loss: 0.371 | Train Acc: 87.08%
+	 Val. Loss: 0.717 |  Val. Acc: 76.88%
+23
+done
+Epoch: 24 | Epoch Time: 0m 48s
+	Train Loss: 0.376 | Train Acc: 87.17%
+	 Val. Loss: 0.411 |  Val. Acc: 85.58%
+24
+done
+Epoch: 25 | Epoch Time: 0m 48s
+	Train Loss: 0.364 | Train Acc: 87.42%
+	 Val. Loss: 0.497 |  Val. Acc: 83.16%
+25
+done
+Epoch: 26 | Epoch Time: 0m 48s
+	Train Loss: 0.363 | Train Acc: 87.40%
+	 Val. Loss: 0.389 |  Val. Acc: 86.32%
+26
+done
+Epoch: 27 | Epoch Time: 0m 48s
+	Train Loss: 0.361 | Train Acc: 87.55%
+	 Val. Loss: 0.456 |  Val. Acc: 84.40%
+27
+done
+Epoch: 28 | Epoch Time: 0m 48s
+	Train Loss: 0.352 | Train Acc: 87.60%
+	 Val. Loss: 0.471 |  Val. Acc: 84.30%
+28
+done
+Epoch: 29 | Epoch Time: 0m 48s
+	Train Loss: 0.353 | Train Acc: 87.78%
+	 Val. Loss: 0.544 |  Val. Acc: 81.18%
+29
+done
+Epoch: 30 | Epoch Time: 0m 49s
+	Train Loss: 0.353 | Train Acc: 87.75%
+	 Val. Loss: 0.445 |  Val. Acc: 84.50%
+30
+done
+Epoch: 31 | Epoch Time: 0m 49s
+	Train Loss: 0.350 | Train Acc: 87.89%
+	 Val. Loss: 0.435 |  Val. Acc: 85.42%
+31
+done
+Epoch: 32 | Epoch Time: 0m 49s
+	Train Loss: 0.343 | Train Acc: 88.22%
+	 Val. Loss: 0.521 |  Val. Acc: 82.64%
+32
+done
+Epoch: 33 | Epoch Time: 0m 49s
+	Train Loss: 0.343 | Train Acc: 88.06%
+	 Val. Loss: 0.579 |  Val. Acc: 81.60%
+33
+done
+Epoch: 34 | Epoch Time: 0m 49s
+	Train Loss: 0.341 | Train Acc: 88.34%
+	 Val. Loss: 0.432 |  Val. Acc: 85.42%
+34
+done
+Epoch: 35 | Epoch Time: 0m 49s
+	Train Loss: 0.336 | Train Acc: 88.38%
+	 Val. Loss: 0.447 |  Val. Acc: 84.84%
+35
+done
+Epoch: 36 | Epoch Time: 0m 50s
+	Train Loss: 0.335 | Train Acc: 88.46%
+	 Val. Loss: 0.556 |  Val. Acc: 82.02%
+36
+done
+Epoch: 37 | Epoch Time: 0m 50s
+	Train Loss: 0.340 | Train Acc: 88.16%
+	 Val. Loss: 0.461 |  Val. Acc: 84.62%
+37
+done
+Epoch: 38 | Epoch Time: 0m 50s
+	Train Loss: 0.333 | Train Acc: 88.49%
+	 Val. Loss: 0.424 |  Val. Acc: 86.84%
+38
+done
+Epoch: 39 | Epoch Time: 0m 50s
+	Train Loss: 0.330 | Train Acc: 88.63%
+	 Val. Loss: 0.532 |  Val. Acc: 81.90%
+39
+done
+Epoch: 40 | Epoch Time: 0m 50s
+	Train Loss: 0.329 | Train Acc: 88.48%
+	 Val. Loss: 0.600 |  Val. Acc: 79.92%
+40
+done
+Epoch: 41 | Epoch Time: 0m 50s
+	Train Loss: 0.323 | Train Acc: 88.75%
+	 Val. Loss: 0.432 |  Val. Acc: 85.18%
+41
+done
+Epoch: 42 | Epoch Time: 0m 50s
+	Train Loss: 0.327 | Train Acc: 88.79%
+	 Val. Loss: 0.391 |  Val. Acc: 86.38%
+42
+done
+Epoch: 43 | Epoch Time: 0m 49s
+	Train Loss: 0.320 | Train Acc: 88.97%
+	 Val. Loss: 0.499 |  Val. Acc: 82.56%
+43
+done
+Epoch: 44 | Epoch Time: 0m 50s
+	Train Loss: 0.318 | Train Acc: 88.96%
+	 Val. Loss: 0.457 |  Val. Acc: 84.38%
+44
+done
+Epoch: 45 | Epoch Time: 0m 50s
+	Train Loss: 0.322 | Train Acc: 88.92%
+	 Val. Loss: 0.406 |  Val. Acc: 85.60%
+45
+done
+Epoch: 46 | Epoch Time: 0m 50s
+	Train Loss: 0.313 | Train Acc: 89.23%
+	 Val. Loss: 0.679 |  Val. Acc: 79.46%
+46
+done
+Epoch: 47 | Epoch Time: 0m 50s
+	Train Loss: 0.315 | Train Acc: 89.24%
+	 Val. Loss: 0.378 |  Val. Acc: 87.02%
+47
+done
+Epoch: 48 | Epoch Time: 0m 50s
+	Train Loss: 0.312 | Train Acc: 89.25%
+	 Val. Loss: 0.367 |  Val. Acc: 87.24%
+48
+done
+Epoch: 49 | Epoch Time: 0m 49s
+	Train Loss: 0.317 | Train Acc: 88.98%
+	 Val. Loss: 0.414 |  Val. Acc: 86.14%
+49
+done
+Epoch: 50 | Epoch Time: 0m 49s
+	Train Loss: 0.305 | Train Acc: 89.44%
+	 Val. Loss: 0.463 |  Val. Acc: 84.94%
+50
+done
+Epoch: 51 | Epoch Time: 0m 49s
+	Train Loss: 0.312 | Train Acc: 89.11%
+	 Val. Loss: 0.457 |  Val. Acc: 84.44%
+51
+done
+Epoch: 52 | Epoch Time: 0m 49s
+	Train Loss: 0.305 | Train Acc: 89.41%
+	 Val. Loss: 0.546 |  Val. Acc: 83.36%
+52
+done
+Epoch: 53 | Epoch Time: 0m 48s
+	Train Loss: 0.308 | Train Acc: 89.24%
+	 Val. Loss: 0.361 |  Val. Acc: 87.40%
+53
+done
+Epoch: 54 | Epoch Time: 0m 49s
+	Train Loss: 0.300 | Train Acc: 89.72%
+	 Val. Loss: 0.354 |  Val. Acc: 87.80%
+54
+done
+Epoch: 55 | Epoch Time: 0m 49s
+	Train Loss: 0.307 | Train Acc: 89.26%
+	 Val. Loss: 0.672 |  Val. Acc: 80.60%
+55
+done
+Epoch: 56 | Epoch Time: 0m 48s
+	Train Loss: 0.297 | Train Acc: 89.73%
+	 Val. Loss: 0.382 |  Val. Acc: 87.16%
+56
+done
+Epoch: 57 | Epoch Time: 0m 48s
+	Train Loss: 0.298 | Train Acc: 89.76%
+	 Val. Loss: 0.383 |  Val. Acc: 87.66%
+57
+done
+Epoch: 58 | Epoch Time: 0m 49s
+	Train Loss: 0.297 | Train Acc: 89.75%
+	 Val. Loss: 0.433 |  Val. Acc: 85.36%
+58
+done
+Epoch: 59 | Epoch Time: 0m 48s
+	Train Loss: 0.288 | Train Acc: 90.00%
+	 Val. Loss: 0.486 |  Val. Acc: 83.94%
+59
+done
+Epoch: 60 | Epoch Time: 0m 49s
+	Train Loss: 0.292 | Train Acc: 89.81%
+	 Val. Loss: 0.397 |  Val. Acc: 87.02%
+60
+done
+Epoch: 61 | Epoch Time: 0m 49s
+	Train Loss: 0.288 | Train Acc: 90.07%
+	 Val. Loss: 0.393 |  Val. Acc: 86.90%
+61
+done
+Epoch: 62 | Epoch Time: 0m 48s
+	Train Loss: 0.287 | Train Acc: 90.11%
+	 Val. Loss: 0.419 |  Val. Acc: 86.14%
+62
+done
+Epoch: 63 | Epoch Time: 0m 49s
+	Train Loss: 0.290 | Train Acc: 90.09%
+	 Val. Loss: 0.403 |  Val. Acc: 86.82%
+63
+done
+Epoch: 64 | Epoch Time: 0m 49s
+	Train Loss: 0.283 | Train Acc: 90.22%
+	 Val. Loss: 0.504 |  Val. Acc: 84.00%
+64
+done
+Epoch: 65 | Epoch Time: 0m 48s
+	Train Loss: 0.285 | Train Acc: 90.24%
+	 Val. Loss: 0.463 |  Val. Acc: 84.40%
+65
+done
+Epoch: 66 | Epoch Time: 0m 48s
+	Train Loss: 0.279 | Train Acc: 90.42%
+	 Val. Loss: 0.409 |  Val. Acc: 85.98%
+66
+done
+Epoch: 67 | Epoch Time: 0m 48s
+	Train Loss: 0.283 | Train Acc: 90.15%
+	 Val. Loss: 0.413 |  Val. Acc: 85.88%
+67
+done
+Epoch: 68 | Epoch Time: 0m 48s
+	Train Loss: 0.275 | Train Acc: 90.59%
+	 Val. Loss: 0.398 |  Val. Acc: 86.78%
+68
+done
+Epoch: 69 | Epoch Time: 0m 49s
+	Train Loss: 0.275 | Train Acc: 90.34%
+	 Val. Loss: 0.503 |  Val. Acc: 82.94%
+69
+done
+Epoch: 70 | Epoch Time: 0m 48s
+	Train Loss: 0.269 | Train Acc: 90.75%
+	 Val. Loss: 0.456 |  Val. Acc: 85.52%
+70
+done
+Epoch: 71 | Epoch Time: 0m 48s
+	Train Loss: 0.273 | Train Acc: 90.58%
+	 Val. Loss: 0.365 |  Val. Acc: 87.86%
+71
+done
+Epoch: 72 | Epoch Time: 0m 48s
+	Train Loss: 0.268 | Train Acc: 90.77%
+	 Val. Loss: 0.378 |  Val. Acc: 87.52%
+72
+done
+Epoch: 73 | Epoch Time: 0m 49s
+	Train Loss: 0.266 | Train Acc: 90.87%
+	 Val. Loss: 0.373 |  Val. Acc: 87.68%
+73
+done
+Epoch: 74 | Epoch Time: 0m 49s
+	Train Loss: 0.262 | Train Acc: 90.99%
+	 Val. Loss: 0.361 |  Val. Acc: 88.14%
+74
+done
+Epoch: 75 | Epoch Time: 0m 49s
+	Train Loss: 0.261 | Train Acc: 90.96%
+	 Val. Loss: 0.362 |  Val. Acc: 88.18%
+75
+done
+Epoch: 76 | Epoch Time: 0m 49s
+	Train Loss: 0.259 | Train Acc: 90.90%
+	 Val. Loss: 0.333 |  Val. Acc: 88.88%
+76
+done
+Epoch: 77 | Epoch Time: 0m 49s
+	Train Loss: 0.254 | Train Acc: 91.32%
+	 Val. Loss: 0.361 |  Val. Acc: 88.38%
+77
+done
+Epoch: 78 | Epoch Time: 0m 48s
+	Train Loss: 0.252 | Train Acc: 91.31%
+	 Val. Loss: 0.364 |  Val. Acc: 87.94%
+78
+done
+Epoch: 79 | Epoch Time: 0m 49s
+	Train Loss: 0.257 | Train Acc: 91.08%
+	 Val. Loss: 0.342 |  Val. Acc: 87.78%
+79
+done
+Epoch: 80 | Epoch Time: 0m 49s
+	Train Loss: 0.248 | Train Acc: 91.23%
+	 Val. Loss: 0.406 |  Val. Acc: 86.24%
+done
+predicted
+Ploting
